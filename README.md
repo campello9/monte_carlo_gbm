@@ -15,6 +15,18 @@ Where:
 * $dt$: Time step increment.
 * $dW_t$: Wiener process or standard Brownian motion increment, representing market randomness.
 
+###Analytical Solution via Itô's Lemma
+
+By applying Itô's calculus to the transform $f(S_t)=\ln(S_t)$ we obtain the esact analytical solution for the asset price at any time $t$:
+
+$$S_t=S_0exp\left( \left(\mu-\frac{\sigma^2}{2}\right)t+\sigma W_t\right)$$
+
+This analytical form is of fundamental importance for the MOnte Carlo simulation. Rather than approximating the SDE step-by-step (which introduces discretization bias), the simulation leverages this exact solution to generate unbiased random walks across discrete time intervals $\Delta t$:
+
+$$S_{t+\Delta t}=S_t exp\left( \left(\mu-\frac{\sigma^2}{2}\right)\Delta t+\sigma\epsilon\sqrt{\Delta t}\right)$$
+
+Where $\epsilon \sim \mathcal{N}(0,1)$ represents a standard normal random variable.
+
 ## Features
 
 * **Vectorized Simulation**: Implemented using `numpy` vectorized calculations to optimize computational performance during Monte Carlo loops.
