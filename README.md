@@ -1,3 +1,4 @@
+<img width="612" height="387" alt="plot" src="https://github.com/user-attachments/assets/539d284e-5f4b-4ecf-9421-173d4a33aea0" />
 # Asset Price Simulation via Geometric Brownian Motion (GBM)
 
 This project implements a Monte Carlo simulation in Python using the **Geometric Brownian Motion (GBM)** stochastic process to project potential future stock price paths.
