@@ -16,7 +16,7 @@ Where:
 * $dt$: Time step increment.
 * $dW_t$: Wiener process or standard Brownian motion increment, representing market randomness.
 
-###Analytical Solution via Itô's Lemma
+### Analytical Solution via Itô's Lemma
 
 By applying Itô's calculus to the transform $f(S_t)=\ln(S_t)$ we obtain the esact analytical solution for the asset price at any time $t$:
 
