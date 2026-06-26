@@ -67,7 +67,6 @@ The simulation generates two primary outputs:
 1. **Path Trajectories Plot**: Visualizes the simulated random walks of the asset over the specified time horizon $T$.
 2. **Terminal Price Distribution**: Statistical breakdown displaying market risk expectations and potential final asset values.
 
-![Banner](https://github.com/campello9/monte_carlo_gbm/blob/main/plot.png?raw=true)
 
 <img width="612" height="387" alt="plot" src="https://github.com/user-attachments/assets/539d284e-5f4b-4ecf-9421-173d4a33aea0" />
 
